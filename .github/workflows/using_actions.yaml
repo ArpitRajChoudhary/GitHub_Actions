@@ -4,13 +4,13 @@ on: push
 
 jobs:
   build:
-    runs-on:ubuntu-latest
+    runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: react-app
     steps:
       - name: Checkout repository
-      uses: actions/Checkout@v7
+        uses: actions/Checkout@v7
 
       - name: Set up Node.js 
         uses: actions/setup-node@v7
