@@ -1,23 +1,23 @@
-name: building_blocks
+# name: building_blocks
 
-on: push
+# on: push
 
-jobs:
-  echo-hello:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Say hello
-        run: echo "Hello, world!"
+# jobs:
+#   echo-hello:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Say hello
+#         run: echo "Hello, world!"
 
 
-  echo-goodbye:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Failed steps
-        run: |
-            echo "This step will fail"
-            exit 0
-      - name: Say goodbye
-        run: echo "goodbye, world!"
+#   echo-goodbye:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Failed steps
+#         run: |
+#             echo "This step will fail"
+#             exit 0
+#       - name: Say goodbye
+#         run: echo "goodbye, world!"
       
     
