@@ -1,0 +1,11 @@
+name: System Report
+
+on: push
+
+jobs:
+    system_info:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Print OS
+              run: uname -r
+              
