@@ -16,3 +16,14 @@ jobs:
               run: date
             - name: Installing Tree
               run: sudo apt update && sudo apt install -y tree
+            - name: Using Tree
+              run: tree -L 2 "$HOME"
+    tool_check:
+        runs-on: ubuntu-latest
+        steps:
+            - name: installing jq
+              run: sudo apt update && sudo apt install -y jq
+            - name: Creating JSON
+              run: echo '{"project":"System Report","status":"success","environment":"GitHub Actions"}' > report.json
+            - name: Peeking in JSON
+              run: jq '.status' report.json
