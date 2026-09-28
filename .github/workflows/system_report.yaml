@@ -7,5 +7,12 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Print OS
-              run: uname -r
-              
+              run: |
+                uname
+                uname -r
+            - name: Disk Info
+              run: df -h    
+            - name: Current Time
+              run: date
+            - name: Installing Tree
+              run: sudo apt update && sudo apt install -y tree
