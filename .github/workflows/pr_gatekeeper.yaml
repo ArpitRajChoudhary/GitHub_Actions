@@ -13,6 +13,6 @@ jobs:
             - name: checks
               run: |
                 echo "${{ github.base_ref }}"
-                ehco "${{ github.event.number }}"
+                echo "${{ github.event.number }}"
                 echo "Gatekeeper checks complete"
 
