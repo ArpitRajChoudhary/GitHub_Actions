@@ -7,10 +7,10 @@ on:
       - main
 
 jobs:
-    system_info:
+    checks:
         runs-on: ubuntu-latest
         steps:
-            - name: checks
+            - name: checking
               run: |
                 echo "${{ github.base_ref }}"
                 echo "${{ github.event.number }}"
